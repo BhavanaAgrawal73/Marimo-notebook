@@ -1,11 +1,42 @@
 # Marimo-notebook
-# Q3  
-As a data scientist at a research institution, you need to create an interactive data analysis notebook that demonstrates the relationship between variables in a dataset. The notebook should be interactive and self-documenting.
+# Q4  
+Supply Chain Analytics: Correlation Matrix Visualization
+OptimalFlow Logistics is a supply chain consulting firm that helps manufacturing companies optimize their procurement and inventory management processes. They analyze relationships between key supply chain metrics to identify bottlenecks, predict delivery issues, and optimize cost structures across their clients' supplier networks.
 
-Create a Marimo notebook that includes:
+Business Context
+A major automotive manufacturer has engaged OptimalFlow to analyze their supplier performance data from 66 different procurement transactions over the past quarter. The company wants to understand how different supply chain variables interact with each other to make data-driven decisions about supplier selection, inventory planning, and cost optimization.
 
-Your email (21f2000670@ds.study.iitm.ac.in) as a comment
-At least two cells with variable dependencies
-An interactive slider widget
-Dynamic markdown output based on widget state
-Comments documenting the data flow between cells
+The dataset contains these critical supply chain metrics:
+
+Supplier_Lead_Time: Days from order placement to delivery
+Inventory_Levels: Current stock quantities (units)
+Order_Frequency: Number of orders placed per month
+Delivery_Performance: On-time delivery rate (%)
+Cost_Per_Unit: Unit cost in dollars ($)
+Your Task
+Create a comprehensive correlation analysis and visualization following Excel best practices from the Visualizing Forecasts with Excel module. You'll need to:
+
+Generate Correlation Matrix: Use Excel's Data Analysis ToolPak to create a correlation matrix
+Create Excel Heatmap: Apply conditional formatting with Red (low) - White - Green (high) color palette
+Validate Repository: Create a GitHub repository with the required files
+Detailed Steps
+Download the supply chain dataset below
+Import data into Excel and create correlation matrix using: Data → Data Analysis → Correlation
+Copy correlation matrix to new sheet and apply conditional formatting:
+Select correlation values (not labels)
+Home → Conditional Formatting → Color Scales
+Choose Red-White-Green palette (Red=low correlation, Green=high correlation)
+Take screenshot of heatmap (400x400 to 512x512 pixels)
+Export correlation matrix as CSV file
+Create GitHub repository with folder containing:
+README.md - contains your email: 21f2000670@ds.study.iitm.ac.in
+correlation.csv - correlation matrix values
+heatmap.png - screenshot of Excel conditional formatting
+Excel Correlation Matrix Steps:
+
+Enable Data Analysis ToolPak: File → Options → Add-ins → Analysis ToolPak
+Data → Data Analysis → Correlation
+Select all 5 data columns, check "Labels in first row"
+Output to new worksheet
+Download the supply chain dataset: 
+
